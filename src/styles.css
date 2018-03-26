@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1491333078588-55b6733c7de6?ixlib=rb-0.3.5&s=74efded57f2a26604fe1ac6c54372f23&auto=format&fit=crop&w=2850&q=80");
+}
+
+h1 {
+  color: white;
+}
+
+h4 {
+  color: yellowgreen;
+}

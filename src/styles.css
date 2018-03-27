@@ -5,9 +5,35 @@ body {
 }
 
 h1 {
-  color: white;
+  color: beige;
 }
 
 h4 {
+  color: tomato;
+}
+
+#alcoholContent {
+  color: beige;
+}
+
+hr {
+  border-color: slategray;
+}
+
+#brand {
+  color: beige;
+}
+
+
+#price {
   color: yellowgreen;
+}
+
+#kegList {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.jumbotron {
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
 }

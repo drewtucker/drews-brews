@@ -1,16 +1,13 @@
-<!--The content below is only a placeholder and can be replaced.-->
-
 <div class="container">
 
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+  <div class="jumbotron">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
 
+  </div>
 
-  <ul>
-    <h4 *ngFor="let currentKeg of kegs"><strong>{{currentKeg.name}}</strong><br><h6>{{currentKeg.brand}}</h6><h6>${{currentKeg.price}}.00</h6><h6>Alcohol Content: {{currentKeg.alcoholContent}}%</h6><hr></h4>
-  </ul>
-
+<app-keg-list></app-keg-list>
 </div>
 </div>

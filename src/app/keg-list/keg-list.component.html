@@ -1,0 +1,7 @@
+
+<div id="kegList">
+
+<ul>
+  <h4 *ngFor="let currentKeg of kegs"><strong>{{currentKeg.name}}</strong><br><h6 id="brand">{{currentKeg.brand}}</h6><h6 id="price">${{currentKeg.price}}.00</h6><h6 id="alcoholContent">Alcohol Content: {{currentKeg.alcoholContent}}%</h6><h5>Pints remaining: {{currentKeg.pints}}</h5><hr></h4>
+</ul>
+</div>

@@ -11,11 +11,5 @@ export class AppComponent {
 
 
 
-  kegs: Keg[] = [
-    new Keg("Wud Light", "WudBeiser", 3, 5),
-    new Keg("Olly's Old-Fashioned Lager", "Awful Olly's Brewery", 5, 6.5),
-    new Keg("Shmeineken", "Shmeineken Brewing Co.", 4.50, 5.5),
-    new Keg("Positively Putrid Porter", "Ted's Garage Brewery", 7, 8.6),
-    new Keg("Newe English 40oz", "40's 4 Days", 2, 9)
-  ]
+  
 }

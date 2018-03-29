@@ -1,0 +1,16 @@
+<h2>New Keg:</h2>
+<div id="newKegForm" class="form-control">
+  <label>Name:</label>
+  <input #newKegName>
+  <br>
+  <label>Brand:</label>
+  <input #newKegBrand>
+  <br>
+  <label>Price:</label>
+  <input #newKegPrice>
+  <br>
+  <label>Alcohol %:</label>
+  <input #newKegAlcoholContent>
+  <br>
+  <button class="btn btn-info" (click) ="submitForm(newKegName.value, newKegBrand.value, newKegPrice.value, newKegAlcoholContent.value); newKegName.value=''; newKegBrand.value=''; newKegPrice.value=''; newKegAlcoholContent.value='';">Add!</button>
+</div>

@@ -1,18 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
 
 body {
   background-image: url("https://images.unsplash.com/photo-1491333078588-55b6733c7de6?ixlib=rb-0.3.5&s=74efded57f2a26604fe1ac6c54372f23&auto=format&fit=crop&w=2850&q=80");
+}
+
+img {
+  height: 200px;
+  width: 300px;
+  background-color: inherit;
 }
 
 h1 {
   color: beige;
 }
 
-h4 {
-  color: tomato;
-}
-
-#alcoholContent {
+h2 {
   color: beige;
 }
 
@@ -20,8 +21,24 @@ hr {
   border-color: slategray;
 }
 
+h4 {
+  color: beige;
+}
+
 #brand {
   color: beige;
+}
+
+#editForm {
+  background-color: rgba(0,0,0,0.5);
+  border-color: slategray;
+  color: beige;
+}
+
+#newKegForm {
+  background-color: rgba(0,0,0,0.5);
+  color: beige;
+  border-color: slategray;
 }
 
 
@@ -36,4 +53,5 @@ hr {
 .jumbotron {
   background-color: rgba(0,0,0,0.5);
   padding: 10px;
+  font-family: "Brush Script MT";
 }

@@ -1,0 +1,20 @@
+
+<div *ngIf="childSelectedKeg">
+<div id="editForm" class="form-control">
+
+<h4>Edit {{childSelectedKeg.name}}</h4>
+<label>Enter New Info:</label>
+<input [(ngModel)]="childSelectedKeg.name" placeholder="New Name">
+<br>
+<label>Brand:</label>
+<input [(ngModel)]="childSelectedKeg.brand">
+<br>
+<label>Price:</label>
+<input [(ngModel)]="childSelectedKeg.price">
+<br>
+<label>Alcohol Content:</label>
+<input [(ngModel)]="childSelectedKeg.alcoholContent">
+<br>
+<button (click)="finishedEditing()" class="btn btn-warning">Update</button>
+</div>
+</div>

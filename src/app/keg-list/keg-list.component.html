@@ -1,7 +1,13 @@
 
 <div id="kegList">
 
+  <select (change)="onChange($event.target.value)" class="form-control">
+    <option value="allKegs" selected="selected">All Kegs</option>
+    <option value="weakerKegs">Weaker Kegs</option>
+    <option value="strongerKegs">Stronger Kegs</option>
+  </select>
+<br>
 <ul>
-  <h4 *ngFor="let currentKeg of kegs"><strong>{{currentKeg.name}}</strong><br><h6 id="brand">{{currentKeg.brand}}</h6><h6 id="price">${{currentKeg.price}}.00</h6><h6 id="alcoholContent">Alcohol Content: {{currentKeg.alcoholContent}}%</h6><h5>Pints remaining: {{currentKeg.pints}}</h5><hr></h4>
+  <h4  *ngFor="let currentKeg of childKegList | alcoholContentPipe:filterByAlcohol"><strong>{{currentKeg.name}}</strong><br><h6 id="brand">{{currentKeg.brand}}</h6><h6 id="price">${{currentKeg.price}}.00</h6><h6 [class]="alcoholColor(currentKeg)">Alcohol Content: {{currentKeg.alcoholContent}}%</h6><h5>Pints remaining: {{currentKeg.pints}}</h5><button (click)="editButtonClicked(currentKeg)" class="btn btn-warning">Edit!</button> <button class="btn btn-primary" (click)="sellPint(currentKeg)">Buy Pint</button> <button class="btn btn-info" (click)="sellGrowler(currentKeg)">Buy Growler</button><hr></h4>
 </ul>
 </div>

@@ -1,13 +1,26 @@
 <div class="container">
 
-<div style="text-align:center">
-  <div class="jumbotron">
-    <h1>
-      Welcome to {{ title }}!
-    </h1>
+  <div style="text-align:center">
+    <div class="jumbotron">
+      <h1>
+        Welcome to {{ title }}!
+        <img src="http://fdileague.com/images/DA/logo.png" alt="Drew's Brew">
+      </h1>
+    </div>
+    <div class="row">
 
+      <div class="col-md-5">
+        <app-keg-list [childKegList]="masterKegList" (clickSender)="editKeg($event)"></app-keg-list>
+      </div>
+
+      <div class="col-md-5">
+        <app-edit-keg [childSelectedKeg]="selectedKeg" (clickedDone)= "finishedEditing()"></app-edit-keg>
+        <app-new-keg-form (sendKeg)="addKeg($event)"></app-new-keg-form>
+      </div>
+
+    </div>
+    <div class="footer">
+      <p>Copyright Drew Tucker 2018</p>
+    </div>
   </div>
-
-<app-keg-list></app-keg-list>
-</div>
 </div>
